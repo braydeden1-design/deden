@@ -197,5 +197,35 @@
             <p>📞 (0232) 123456</p>
         </div>
 
-        <div class="fo
+        <div class="form">
+            <h3>Kirim Pesan</h3>
+            <input type="text" id="nama" placeholder="Nama Lengkap">
+            <input type="email" id="email" placeholder="Email">
+            <textarea id="pesan" rows="5" placeholder="Tulis pesan Anda..."></textarea>
+            <button onclick="kirimPesan()">Kirim Pesan</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>✨ Wisata Kabupaten Kuningan – Alam, Sejarah, dan Harmoni ✨</p>
+</footer>
+
+<script>
+    function kirimPesan() {
+        let nama = document.getElementById("nama").value;
+        let email = document.getElementById("email").value;
+        let pesan = document.getElementById("pesan").value;
+
+        if (nama === "" || email === "" || pesan === "") {
+            alert("Mohon lengkapi semua data sebelum mengirim pesan.");
+        } else {
+            alert("Terima kasih, " + nama + "!");
+        }
+    }
+</script>
+
+</body>
+</html>
+
 
